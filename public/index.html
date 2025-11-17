@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IoT Control Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="header">
+    <h1>⚙ IOT DASHBOARD</h1>
+    <p>STATUS: <span class="status">CONNECTED</span> </p>
+  </div>
+
+  <div class="grid">
+    <div class="card wide">
+      <h2>Sensor Data</h2>
+      <div class="data">
+        <p>Temperature: <span id="temp">--</span> °C</p>
+        <p>Humidity: <span id="hum">--</span> %</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>System Log</h2>
+      <div id="log" class="log-box">
+        <p>[00:00:00] Waiting for data...</p>
+      </div>
+    </div>
+
+    <div class="card wide">
+      <h2>Humidity Graph</h2>
+      <canvas id="humidityChart"></canvas>
+    </div>
+
+
+    <div class="card">
+      <h2>Quick Control</h2>
+      <div class="buttons">
+        <button>Restart</button>
+        <button>Shutdown</button>
+        <button>Info</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>HEND SYSTEMS 2025 — Monitoring Active</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
